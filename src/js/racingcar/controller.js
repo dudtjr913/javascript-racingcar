@@ -34,7 +34,6 @@ class RacingCarController {
 
   getCarsInput() {
     const $carInput = $('#car-input');
-
     return $carInput.value.split(',').map((car) => car.trim());
   }
 

@@ -1,4 +1,4 @@
-import {$} from '../utils/dom.js';
+import { $ } from '../utils/dom.js';
 import {
   countSectionTemplate,
   processSectionTemplate,
@@ -8,20 +8,17 @@ import {
 class RacingCarView {
   renderCount() {
     const $countSection = $('#count');
-    $countSection.show();
-    $countSection.innerHTML = countSectionTemplate();
+    $countSection.show().innerHTML = countSectionTemplate();
   }
 
   renderProcess(cars) {
     const $processSection = $('#process');
-    $processSection.show();
-    $processSection.innerHTML = processSectionTemplate(cars);
+    $processSection.show().innerHTML = processSectionTemplate(cars);
   }
 
   renderResult(winners) {
     const $resultSection = $('#result');
-    $resultSection.show();
-    $resultSection.innerHTML = resultSectionTemplate(winners);
+    $resultSection.show().innerHTML = resultSectionTemplate(winners);
   }
 
   hideSpinnerAll() {
@@ -38,20 +35,17 @@ class RacingCarView {
 
   resetCount() {
     const $countSection = $('#count');
-    $countSection.hide();
-    $countSection.innerHTML = ``;
+    $countSection.hide().innerHTML = ``;
   }
 
   resetProcess() {
     const $processSection = $('#process');
-    $processSection.hide();
-    $processSection.innerHTML = ``;
+    $processSection.hide().innerHTML = ``;
   }
 
   resetResult() {
     const $resultSection = $('#result');
-    $resultSection.hide();
-    $resultSection.innerHTML = ``;
+    $resultSection.hide().innerHTML = ``;
   }
 
   reset() {
